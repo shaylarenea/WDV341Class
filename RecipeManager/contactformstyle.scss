@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'Navbar Navbar Navbar Navbar Navbar Navbar'
+        'Left Left Main Main Main Main'
+        'Left Left Right Right Right Right'
+        'Menu Menu Menu Menu Menu Menu'
+        'Footer Footer Footer Footer Footer Footer';
+}
+
+.Navbar {
+    grid-area: Navbar;
+    display: flex;
+    background-color: #bf8c3b;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: block;
+    color: #4f393b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e0b2cf;
+}
+
+.Left {
+    grid-area: Left;
+   text-align:center;
+   
+  }
+
+  .Main {
+    grid-area: Main;
+    padding: 35px;
+  }
+
+  .Right {
+    grid-area: Right;
+  }
+
+.Left,
+.Main,
+.Right,
+.Menu {
+    text-align: center;
+    background-color: #e0b2cf;
+}
+
+
+  label[for="textarea"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #4f393b; 
+    margin-bottom: -15px;
+    display: block; 
+
+}
+div>label[for="emailAddress"] {
+    font-weight: bold;
+    color: #333;
+}
+
+div>input[type="text"][name="emailAddress"] {
+    width: 250px; 
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 28px;
+   
+}
+
+div>input[type="text"][name="lastName"] {
+    width: 250px; 
+    padding: 5px;
+    margin-top: 5px;
+    
+}
+
+div>input[type="text"][name="firstName"] {
+    width: 250px; 
+    padding: 5px;
+    margin-top: 5px;
+
+}
+input[type="submit"] {
+    background-color: #4f393b; 
+    color: #e0b2cf;
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+input[type="reset"] {
+    background-color: #4f393b;
+    color: #e0b2cf; 
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer; 
+    margin-bottom: 15px;
+}
+
+.radio-form label {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.radio-form input[type="radio"] {
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.radio-form label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.Left {
+    grid-area: Left;
+    text-align: center;
+}
+
+.Left img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.Footer {
+    grid-area: Footer;
+    background-color: #bf8c3b;
+    text-align: center;
+    padding: 15px;
+    color:#4f393b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color:#4f393b;
+}
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    .grid {
+        grid-template-areas:
+            'Navbar Navbar Navbar Navbar Navbar Navbar'
+            'Left Left Left Left Left Left' /* Adjust the number of columns as needed */
+            'Main Main Main Main Main Main'
+            'Right Right Right Right Right Right'
+            'Menu Menu Menu Menu Menu Menu'
+            'Footer Footer Footer Footer Footer Footer';
+    }
+
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        padding: 10px; /* Adjust as needed for spacing */
+    }
+
+    .Left,
+    .Main,
+    .Right,
+    .Menu {
+        text-align: left; /* Adjust as needed */
+    }
+
+    div>input[type="text"] {
+        width: calc(100% - 56px); /* Make text inputs full width and adjust for padding/margin */
+        margin-left: 28px; /* Adjust left margin */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: calc(100% - 28px); /* Make buttons full width and adjust for padding/margin */
+        margin-bottom: 10px; /* Add some space between buttons */
+    }
+
+    .radio-form label {
+        margin-right: 0; /* Remove right margin */
+    }
+}
