@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "Navbar Navbar Navbar Navbar Navbar Navbar" "Main Main Main Main Main Main" "Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar {
+  grid-area: Navbar;
+  display: flex;
+  background-color: #bf8c3b;
+  list-style-type: none;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: block;
+  color: #4f393b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e0b2cf;
+}
+
+.Main {
+  grid-area: Main;
+  text-align: center;
+  background-color: #e0b2cf;
+}
+
+.Footer {
+  grid-area: Footer;
+  background-color: #bf8c3b;
+  text-align: center;
+  padding: 15px;
+}
+
+.Left {
+  grid-area: Left;
+}
+
+.Left .cookiedough {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  background-color: #e0b2cf;
+}
+
+.cookiename-title {
+  color: #4f393b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.coookiedata {
+  border: 2px solid #4f393b;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.cookietitle {
+  /* Add styles specific to .cookietitle here */
+  color: #4f393b;
+  font-size: 24px;
+  /* Add other styles as needed */
+}/*# sourceMappingURL=databasestyle.css.map */
