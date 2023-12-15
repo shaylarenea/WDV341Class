@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "Navbar Navbar Navbar Navbar Navbar Navbar" "Left Left Main Main Right Right" "Menu Menu Menu Menu Menu Menu" "Footer Footer Footer Footer Footer Footer";
+}
+
+.Navbar {
+  grid-area: Navbar;
+  display: flex;
+  background-color: #bf8c3b;
+  list-style-type: none;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: block;
+  color: #4f393b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e0b2cf;
+}
+
+.Left {
+  grid-area: Left;
+}
+
+h2 {
+  color: #e0b2cf;
+  padding: 15px;
+  text-align: center;
+}
+
+.Left p {
+  text-align: center;
+}
+
+.Main {
+  grid-area: Main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Right {
+  grid-area: Right;
+  text-align: center;
+}
+
+.halfbutton,
+.normalbutton,
+.doublebutton,
+.ingredients,
+.instruction {
+  background-color: #e0b2cf;
+  padding: 10px;
+  margin: 5px;
+}
+
+.close-all {
+  background-color: #7b442f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+h3 {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.Menu {
+  grid-area: Menu;
+  background-color: #e0b2cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.recipebutton {
+  background-color: #7b442f;
+  color: #e0b2cf;
+  padding: 20px;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #7b442f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Footer {
+  grid-area: Footer;
+  background-color: #bf8c3b;
+  text-align: center;
+  padding: 15px;
+}
+
+img[src="whitesugarcookie.png"] {
+  margin-left: 100px;
+}
+
+img[src="Chocolatechip5.png"] {
+  margin-left: 100px;
+}
+
+img[src="oatmealcookie3.png"] {
+  margin-left: 100px;
+}
+
+.suganavbutton,
+.Oatnavbutton,
+.Chocnavbutton {
+  background-color: #e0b2cf;
+  color: #7b442f;
+  padding: 10px 20px;
+  font-size: 11px;
+  margin-right: 10px;
+  margin-left: 10px; /* Adjusted margin-left for proper spacing */
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+/* ... other styles ... */
+.instruction-button {
+  background-color: #e0b2cf;
+}
+
+.ingredients-button {
+  background-color: #e0b2cf;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-areas: "Navbar" "Left" "Main" "Right" "Menu" "Footer";
+  }
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-bottom: 10px;
+  }
+  /* Corrected the class from .Header to .Navbar */
+  .Navbar {
+    padding: 15px;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropbtn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=chocolatechipstyle.css.map */

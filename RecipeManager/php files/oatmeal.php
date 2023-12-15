@@ -15,7 +15,8 @@
         <div class="Navbar">
             <img src="Cookie Crumb Short Logo.png" alt="logo" class="logo">
             <ul>
-                <li><a href="cookiecrumbfactory2.php">HOME</a></li>
+                <<li><a href="cookiecrumbfactory2.php">HOME</a></li>
+                <li><a href="cookiedatabase.php">COOKIE DATABASE</a></li>
                 <li><a href="recipeinputform.php">SUBMIT RECIPES</a></li>
                 <li><a href="signin.php">SIGN IN</a></li>
                 <li><a href="contactus.php">CONTACT US</a></li>
