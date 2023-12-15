@@ -11,7 +11,7 @@
  $servername = "localhost"; //generally the same for local and hosting account
 $username = "root"; //database username different on local vs hosting account
 $password = ""; //database password different on local vs hosting account gitignore
-$databasename = "admin"; // will could differ between localhost and hosting account 
+$databasename = "sign_in"; // will could differ between localhost and hosting account 
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
@@ -20,6 +20,7 @@ try {
   echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
+  die();
 }
 
 

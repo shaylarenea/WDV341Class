@@ -1,7 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $submissionSuccessful = true;
+    $firstName = isset($_POST['firstName']) ? $_POST['firstName'] : '';
+    $submissionSuccessful = true;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="Main">
-            <form method="post" action="formprocessor1.php">
+            <form method="post" action="">
+                <!-- Set action to an empty string to make it self-posting -->
                 <div>
                     <label for="firstName">First Name:</label>
                     <input type="text" name="firstName" id="firstName">
@@ -74,13 +78,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="Right">
-            <?php
-            // Display submission successful message
-            if (isset($submissionSuccessful) && $submissionSuccessful) {
-                echo "<p class='success-message'>Submission successful! <a href='formprocessor2.php'>Thank you for your submission!</a></p>";
-            }
-            ?>
-        </div>
+    <?php
+    if (isset($submissionSuccessful) && $submissionSuccessful) {
+        echo "<p class='success-message'>Submission successful, $firstName! <a href='formprocessor2.php'>Thank you for your submission!</a></p>";
+    }
+    ?>
+</div>
 
         <div class="Menu">
             <div>
